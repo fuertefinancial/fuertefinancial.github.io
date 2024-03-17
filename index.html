@@ -1,3 +1,102 @@
 <html>
 
+<head>
+    <title>
+HI
+    </title>
+    <style>
+        /*Hero*/
+        @font-face {
+            font-family: Biko;
+            src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+        }
+
+        body {
+            background: white;
+            margin: 2rem;
+        }
+
+        header {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            max-width: 1200px;
+        }
+
+        header video {
+            width: 100%;
+        }
+
+        svg {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        svg text {
+            font-family: Biko, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 38px;
+        }
+
+        svg rect {
+            fill: white;
+        }
+
+        svg>rect {
+            -webkit-mask: url(#mask);
+            mask: url(#mask);
+        }
+
+        /*Hero*/
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+
+    </div>
+
+    <div class="hero">
+        <header>
+            <video autoplay playsinline muted loop preload poster=""> <!--POSTER NEEDED-->
+                <source src="assets/videos/stars.mp4" />
+
+            </video>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%">
+                        <rect x="0" y="0" width="100%" height="100%" />
+                        <text x="72" y="50">Fuerte</text>
+                    </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" />
+            </svg>
+        </header>
+    </div>
+
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ko5AJh2J4xU?si=1qvA70sVXEXvw4Q6"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="Offer">
+
+    </div>
+    <!-- Hero -->
+    <script>
+        const video = document.querySelector("video");
+        if (window.matchMedia('(prefers-reduced-motion)').matches) {
+            video.removeAttribute("autoplay");
+            video.pause();
+        }
+    </script>
+    <!-- Hero -->
+</body>
+
 </html>
