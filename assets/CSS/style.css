@@ -1,0 +1,97 @@
+.blackbg {
+  background-color: #000000; /* Black background color */
+}
+
+/* Hero*/
+
+/* 1, White BG Fuerte in Stars */
+@font-face {
+  font-family: Biko;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+svg text {
+  font-family: Biko, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+svg rect {
+  fill: white;
+}
+
+svg > rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+/* 1, White BG Fuerte in Stars */
+
+/* 2, star BG Fuerte in White */
+
+/* Media query for small screens */
+
+.video-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+h1.ct {
+  font-family: "Exo", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 9em;
+}
+
+p.ct {
+  font-size: 3em;
+}
+
+@media (max-width: 768px) {
+    h1.ct {
+        font-family: "Exo", sans-serif;
+        font-weight: 700; /* Bold */
+        font-size: 4.2em;
+      }
+      
+      p.ct {
+        font-size: 1.5em;
+      }
+
+/* 2, star BG Fuerte in White */
+
+/*Hero */
