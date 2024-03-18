@@ -1,6 +1,11 @@
 .blackbg {
   background-color: #000000; /* Black background color */
 }
+/*NAVLOGO*/
+
+
+/*NAVLOGO*/
+
 
 /* Hero*/
 
@@ -42,10 +47,8 @@ svg > rect {
 }
 /* 1, White BG Fuerte in Stars */
 
+
 /* 2, star BG Fuerte in White */
-
-/* Media query for small screens */
-
 .video-container {
   position: relative;
   height: 100vh; /* Full viewport height */
@@ -53,14 +56,14 @@ svg > rect {
 }
 
 video {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .centered-text {
   position: absolute;
@@ -82,16 +85,42 @@ p.ct {
 }
 
 @media (max-width: 768px) {
-    h1.ct {
-        font-family: "Exo", sans-serif;
-        font-weight: 700; /* Bold */
-        font-size: 4.2em;
-      }
-      
-      p.ct {
-        font-size: 1.5em;
-      }
+  h1.ct {
+    font-family: "Exo", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 4.2em;
+  }
 
+  p.ct {
+    font-size: 1.7em;
+    
+  }
+}
 /* 2, star BG Fuerte in White */
 
 /*Hero */
+
+
+/*VIDEOS*/
+.videos{
+    background-color: black;
+}
+
+.VidQuestion{
+    justify-content: center;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 300%;
+}
+
+@media (max-width: 768px) {
+    .VidQuestion{
+        justify-content: center;
+        color: white;
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 180%;
+    }
+  }
+
+ 
+/*VIDEOS*/

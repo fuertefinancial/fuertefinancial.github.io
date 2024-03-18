@@ -1,7 +1,7 @@
 // HERO 
 
 //1, White BG Fuerte in Stars
-const video = document.querySelector("video");
+var video = document.querySelector("video");
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     video.removeAttribute("autoplay");
     video.pause();
@@ -10,3 +10,8 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
 
 
 // HERO
+
+
+// VIDEOS
+
+// VIDEOS
