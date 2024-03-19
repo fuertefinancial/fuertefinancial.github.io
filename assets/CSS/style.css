@@ -3,9 +3,7 @@
 }
 /*NAVLOGO*/
 
-
 /*NAVLOGO*/
-
 
 /* Hero*/
 
@@ -46,7 +44,6 @@ svg > rect {
   mask: url(#mask);
 }
 /* 1, White BG Fuerte in Stars */
-
 
 /* 2, star BG Fuerte in White */
 .video-container {
@@ -89,38 +86,129 @@ p.ct {
     font-family: "Exo", sans-serif;
     font-weight: 700; /* Bold */
     font-size: 4.2em;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   p.ct {
-    font-size: 1.7em;
-    
+    font-size: 1.5em;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
   }
 }
 /* 2, star BG Fuerte in White */
 
 /*Hero */
 
-
 /*VIDEOS*/
-.videos{
-    background-color: black;
+.videos {
+  background-color: black;
 }
 
-.VidQuestion{
-    justify-content: center;
-    color: white;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 300%;
+.VidQuestion {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 300%;
+  border-style: dotted none dotted none;
+  border-color: rgb(57, 57, 57);
 }
 
 @media (max-width: 768px) {
-    .VidQuestion{
-        justify-content: center;
-        color: white;
-        font-family: 'Comfortaa', sans-serif;
-        font-size: 180%;
-    }
+  .VidQuestion {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 180%;
+    padding-right: 30px;
+    padding-left: 30px;
   }
+}
 
- 
 /*VIDEOS*/
+
+/* Offer */
+.Offer {
+  background-color: black;
+}
+
+.OfferQuestion {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 300%;
+  border-style: dotted none dotted none;
+  border-color: rgb(57, 57, 57);
+}
+
+@media (max-width: 768px) {
+  .OfferQuestion {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 180%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+#offeriframeid {
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+
+/* Offer */
+
+
+/*Team*/
+.Team {
+  background-color: black;
+}
+.TeamHead {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 300%;
+  border-style: dotted none dotted none;
+  border-color: rgb(57, 57, 57);
+}
+/*Team*/
+
+
+/*Future*/
+.Future {
+  background-color: black;
+}
+.FutureTitle {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 300%;
+  border-style: dotted none dotted none;
+  border-color: rgb(57, 57, 57);
+}
+/*Future*/
+
+
+/*Contact*/
+.Contact {
+  background-color: black;
+}
+.ContactTitle {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 300%;
+  border-style: dotted none dotted none;
+  border-color: rgb(57, 57, 57);
+}
+/*Contact*/
