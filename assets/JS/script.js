@@ -20,12 +20,13 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
 // Contact 
 document.getElementById('emailForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission
+    const email = "fuertefintech@icloud.com";
     const nameOrg = document.getElementById('nameOrgInput').value;
     const subject = document.getElementById('subjectInput').value;
     const message = document.getElementById('messageInput').value;
 
     // Create the mailto link with subject and body
-    const mailtoLink = `mailto:${nameOrg}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
     // Open the default email client with the mailto link
     window.location.href = mailtoLink;

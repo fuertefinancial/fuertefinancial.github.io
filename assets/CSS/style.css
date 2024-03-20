@@ -1,3 +1,7 @@
+.body{
+  overflow: hidden;
+}
+
 .blackbg {
   background-color: #000000; /* Black background color */
 }
@@ -46,6 +50,9 @@ svg > rect {
 /* 1, White BG Fuerte in Stars */
 
 /* 2, star BG Fuerte in White */
+.hero{
+  overflow: hidden;
+}
 .video-container {
   position: relative;
   height: 100vh; /* Full viewport height */
@@ -115,6 +122,7 @@ p.ct {
 /*VIDEOS*/
 .videos {
   background-color: black;
+  overflow: hidden;
 }
 
 .VidQuestion {
@@ -144,6 +152,7 @@ p.ct {
 /* Offer */
 .Offer {
   background-color: black;
+  overflow: hidden;
 }
 
 .OfferQuestion {
@@ -169,7 +178,7 @@ p.ct {
 }
 
 .iframe-container{
-  width: 100%;
+  width: 90%;
   height: 670px;
 background-color: #000000;
 }
@@ -185,6 +194,7 @@ background-color: #000000;
 /*Team*/
 .Team {
   background-color: black;
+  overflow: hidden;
 }
 .TeamHead {
   justify-content: center;
@@ -207,7 +217,7 @@ background-color: #000000;
 
 @media screen and (max-width: 600px) {
   .card-column {
-    width: 100%;
+    width: 90%;
     display: block;
   }
 }
@@ -277,6 +287,7 @@ background-color: #000000;
 /*Future*/
 .Future {
   background-color: black;
+  overflow: hidden;
 }
 .FutureTitle {
   justify-content: center;
