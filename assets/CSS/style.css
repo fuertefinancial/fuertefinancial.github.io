@@ -422,6 +422,7 @@ background-color: #000000;
 /*Contact*/
 .Contact {
   background-color: black;
+  overflow: hidden;
 }
 .ContactTitle {
   justify-content: center;
