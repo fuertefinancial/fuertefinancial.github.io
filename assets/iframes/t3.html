@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        /* box-sizing: inherit; */
+
+        .card-column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .card-column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #000;    
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        }
+
+        .card-container {
+            padding: 0 16px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .card-container::after,
+        .card-row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .card-title {
+            color: grey;
+        }
+
+        .card-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .card-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+
+    <div class="card-row">
+        <div class="card-column">
+            <div class="card">
+                <img src="../photos/images/fggf.jpg" alt="Jane" style="width:100%">
+                <div class="card-container">
+                    <h2>Jane Doe</h2>
+                    <p class="card-title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><card-button class="card-button">Contact</card-button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-column">
+            <div class="card">
+                <img src="../photos/images/6.jpg" alt="Mike" style="width:100%">
+                <div class="card-container">
+                    <h2>Mike Ross</h2>
+                    <p class="card-title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><card-button class="card-button">Contact</card-button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-column">
+            <div class="card">
+                <img src="../photos/images/54645.jpg" alt="John" style="width:100%">
+                <div class="card-container">
+                    <h2>John Doe</h2>
+                    <p class="card-title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><card-button class="card-button">Contact</card-button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

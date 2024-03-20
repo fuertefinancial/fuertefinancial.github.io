@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <style>
+        .contact-form {
+            text-align: center;
+        }
+
+        .label-text-0 {
+
+            display: block;
+            letter-spacing: 4px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .label-text {
+            color: #9b9b9b;
+            cursor: text;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            transform: translateY(-34px);
+            /* Corrected syntax */
+            transition: all 0.3s;
+        }
+
+        .contact-input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid #424242b5;
+            color: white;
+            font-size: 36px;
+            letter-spacing: -1px;
+            outline: 0;
+            padding: 5px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            width: 200px;
+        }
+
+        .contact-input:focus {
+            max-width: 100%;
+            width: 400px;
+        }
+
+        .contact-input:focus+.label-text {
+            color: #f0f0f0;
+            font-size: 13px;
+            transform: translateY(-74px);
+            /* Corrected syntax */
+        }
+
+        .contact-input:valid+.label-text {
+            font-size: 13px;
+            transform: translateY(-74px);
+            /* Corrected syntax */
+        }
+
+        .contact-button {
+            background-color: #333;
+            border: 2px solid white;
+            border-radius: 27px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            transition: all 200ms;
+        }
+
+        .contact-button:hover,
+        .contact-button:focus {
+            background-color: white;
+            color: #424242b5;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contact-form" id="emailForm">
+        <label class="label-text-0">
+            <input type="text" class="contact-input" id="nameOrgInput" required />
+            <div class="label-text">Name & Organization</div>
+        </label>
+        <label class="label-text-0">
+            <input type="text" class="contact-input" id="subjectInput" required />
+            <div class="label-text">Subject</div>
+        </label>
+        <label class="label-text-0">
+            <textarea rows="4" cols="50" id="messageInput"></textarea>
+            <div class="label-text">Message</div>
+        </label>
+        <button type="submit" class="contact-button">
+            Submit
+        </button>
+    </form>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            const nameOrg = document.getElementById('nameOrgInput').value;
+            const subject = document.getElementById('subjectInput').value;
+            const message = document.getElementById('messageInput').value;
+
+            // Create the mailto link with subject and body
+            const mailtoLink = `mailto:${nameOrg}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+            // Open the default email client with the mailto link
+            window.location.href = mailtoLink;
+
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        });
+    </script>
+</body>
+
+</html>

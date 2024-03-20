@@ -25,10 +25,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Museo+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800" rel="stylesheet">
 
     <!--BootStrap CSS-->
     <link href="assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -76,7 +77,7 @@
         </div>
         <br>
         <div class=" container">
-            <div class="iframe-container" >
+            <div class="iframe-container">
                 <iframe src="assets/iframes/cards.html" class="offeriframe" id="offeriframeid" scrolling="no"></iframe>
             </div>
             <br><br>
@@ -90,9 +91,112 @@
         </div>
         <br>
         <div class="container">
-            <div class="team-container" >
+            <div class="team-container">
+                <div class="card-row">
+                    <div class="card-column">
+                        <div class="card">
+                            <img src="assets/photos/images/fggf.jpg" alt="Jane" style="width:100%">
+                            <div class="card-container"><br>
+                                <h2>Diego Melendez</h2>
+                                <p class="card-title">CEO & Founder</p>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <!-- <p>example@example.com</p> -->
+                                <p>
+                                <div class="row card-logo">
+                                    <div class="col">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="instagram.com">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.linkedin.com/">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://twitter.com/">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-column">
+                        <div class="card">
+                            <img src="assets/photos/images/6.jpg" alt="Mike" style="width:100%">
+                            <div class="card-container"><br>
+                                <h2>Ryan Gosling</h2>
+                                <p class="card-title">COO</p>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <!-- <p>example@example.com</p> -->
+                                <p>
+                                <div class="row card-logo">
+                                    <div class="col">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-discord"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-facebook"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-github"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-medium"></i>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-column">
+                        <div class="card">
+                            <img src="assets/photos/images/54645.jpg" alt="Bradley" style="width:100%">
+                            <div class="card-container"><br>
+                                <h2>Bradley Cooper</h2>
+                                <p class="card-title">CTO</p>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <!-- <p>example@example.com</p> -->
+                                <p>
+                                <div class="row card-logo">
+                                    <div class="col">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-pinterest"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-reddit"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-snapchat"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-youtube"></i>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <br><br>
+            </div>
         </div>
     </div>
 
@@ -103,8 +207,8 @@
         </div>
         <br>
         <div class="container">
-            <div class="Future-container" >
-                </div>
+            <div class="Future-container">
+            </div>
             <br><br>
         </div>
     </div>
@@ -116,14 +220,35 @@
         </div>
         <br>
         <div class="container">
-            <div class="Contact-container" >
+            <div class="Contact-container">
+                <div class="row">
+                    <div class="col-md">
+                        <!-- Calandly -->
+                    </div>
+                    <div class="col-md">
+                        <form class="contact-form" id="emailForm">
+                            <label class="label-text-0">
+                                <input type="text" class="contact-input" id="nameOrgInput" required />
+                                <div class="label-text">Name & Organization</div>
+                            </label>
+                            <label class="label-text-0">
+                                <input type="text" class="contact-input" id="subjectInput" required />
+                                <div class="label-text">Subject</div>
+                            </label>
+                            <label class="label-text-0">
+                                <input type="text" class="contact-input" id="messageInput" required />
+                                <div class="label-text">Message</div>
+                            </label>
+                            <button type="submit" class="contact-button">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
                 </div>
+            </div>
             <br><br>
         </div>
     </div>
-
-
-
 
     <!--BootStrap JS-->
     <script defer src="assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js">
